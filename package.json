@@ -1,0 +1,31 @@
+{
+  "name": "tiles-intersect",
+  "version": "1.0.0",
+  "description": "Find all tiles or voxels (in 2- or 3-dimensional Cartesian grid) intersected by a line segment",
+  "main": "build/tiles-intersect.js",
+  "module": "build/tiles-intersect.module.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "concurrently 'rollup -c -w' 'http-server -p 8080'",
+    "server": "http-server -p 8080",
+    "test": "browserify test/test.js > test/test.build.js"
+  },
+  "keywords": [
+    "line",
+    "segment",
+    "tile",
+    "grid",
+    "voxel",
+    "ray",
+    "intersect"
+  ],
+  "author": "vtHawk",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^16.5.0",
+    "concurrently": "^4.1.2",
+    "http-server": "^0.11.1",
+    "rollup": "^1.22.0"
+  }
+}
